@@ -1,8 +1,9 @@
-import { Link } from 'react-router-dom';
-import Icon from '../components/Icon';
-import MaskArt from '../components/MaskArt';
-import { eur, features, products } from '../data';
-import { useCart } from '../cart';
+import { Link } from "react-router-dom";
+import Icon from "../components/Icon";
+import MaskArt from "../components/MaskArt";
+import { eur, features, products } from "../data";
+import { useCart } from "../cart";
+import MaskArt2 from "../components/MaskArt2";
 
 export default function Home() {
   const { add } = useCart();
@@ -19,8 +20,8 @@ export default function Home() {
             <br />É a tua noite, reinventada.
           </h1>
           <p className="lead">
-            Tecnologia, conforto e bem-estar num só dispositivo. Para adormeceres mais rápido, dormires melhor e
-            acordares como queres.
+            Tecnologia, conforto e bem-estar num só dispositivo. Para
+            adormeceres mais rápido, dormires melhor e acordares como queres.
           </p>
           <div className="actions">
             <Link to="/comprar" className="btn">
@@ -48,8 +49,9 @@ export default function Home() {
         <p className="eyebrow">Revê / Sleep / Recharge / Repeat</p>
         <h2>Um só objeto, em vez de quatro.</h2>
         <p className="lead narrow">
-          Venda de olhos, auscultadores, aplicação de meditação e monitor de sono. Deixas de adormecer com auriculares
-          desconfortáveis ou com o telemóvel na mesa de cabeceira.
+          Venda de olhos, auscultadores, aplicação de meditação e monitor de
+          sono. Deixas de adormecer com auriculares desconfortáveis ou com o
+          telemóvel na mesa de cabeceira.
         </p>
         <div className="grid3">
           {features.map((f) => (
@@ -71,7 +73,7 @@ export default function Home() {
         <p className="eyebrow">Produtos</p>
         <h2>Tudo o que precisas. Num só lugar.</h2>
         <div className="product-hero card">
-          <MaskArt className="product-art" />
+          <MaskArt2 className="product-art" />
           <div>
             <h3>{device.name}</h3>
             <p>{device.description}</p>
@@ -81,7 +83,12 @@ export default function Home() {
               ))}
             </ul>
             <p className="price">{eur(device.price)}</p>
-            <button className="btn" onClick={() => add({ id: device.id, name: device.name, price: device.price })}>
+            <button
+              className="btn"
+              onClick={() =>
+                add({ id: device.id, name: device.name, price: device.price })
+              }
+            >
               Adicionar ao carrinho
             </button>
           </div>
@@ -92,7 +99,10 @@ export default function Home() {
               <h3>{p.name}</h3>
               <p>{p.description}</p>
               <p className="price small">{eur(p.price)}</p>
-              <button className="btn ghost" onClick={() => add({ id: p.id, name: p.name, price: p.price })}>
+              <button
+                className="btn ghost"
+                onClick={() => add({ id: p.id, name: p.name, price: p.price })}
+              >
                 Adicionar
               </button>
             </article>
@@ -108,7 +118,8 @@ export default function Home() {
       <section className="section cta">
         <h2>Prefere experimentar primeiro?</h2>
         <p className="lead narrow">
-          Marca uma visita ao showroom em Guimarães e sente o conforto, o som e a temperatura antes de decidires.
+          Marca uma visita ao showroom em Guimarães e sente o conforto, o som e
+          a temperatura antes de decidires.
         </p>
         <Link to="/showroom" className="btn">
           Marcar showroom
