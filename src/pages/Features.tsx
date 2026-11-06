@@ -3,26 +3,26 @@ import Icon from '../components/Icon';
 import { features, premiumBenefits } from '../data';
 
 const steps = [
-  { icon: 'design' as const, title: 'Colocas a venda', text: 'A aplicação abre a tua playlist do Spotify e o som Dolby Atmos envolve-te.' },
-  { icon: 'heart' as const, title: 'Mede o ritmo cardíaco', text: 'O sensor percebe quando estás em sono leve, normal ou profundo.' },
+  { icon: 'design' as const, title: 'Coloca a venda', text: 'A aplicação abre a sua playlist do Spotify e o som Dolby Atmos envolve-o.' },
+  { icon: 'heart' as const, title: 'Mede o ritmo cardíaco', text: 'O sensor percebe quando está em sono leve, normal ou profundo.' },
   { icon: 'power' as const, title: 'Desliga-se sozinho', text: 'Ao detetar sono profundo, o áudio desliga-se automaticamente.' },
-  { icon: 'sleep' as const, title: 'Acorda-te no momento certo', text: 'O despertador acompanha os ciclos de sono para acordares de forma suave.' }
+  { icon: 'sleep' as const, title: 'Acorda-o no momento certo', text: 'O despertador acompanha os ciclos de sono para acordar de forma suave.' }
 ];
 
 const benefits = [
-  ['Menos coisas na cama', 'Já não precisas de auriculares, aplicações soltas ou do telemóvel aceso ao lado.'],
-  ['Conforto que não aquece', 'Tecido que não aquece e capa lavável, para dormires sem calor nem marcas.'],
-  ['Rotina simples', 'Uma só coisa, em vez de várias, para desligares a cabeça ao fim do dia.'],
-  ['Acordar com suavidade', 'Sem alarme brusco: o despertar acompanha os teus ciclos de sono.'],
-  ['Ambiente à tua medida', 'Calor ou frio com gel packs, aroma de lavanda e som que escolhes.'],
-  ['Dados que percebes', 'Relatórios simples sobre o teu descanso, na aplicação.']
+  ['Menos coisas na cama', 'Já não precisa de auriculares, aplicações soltas ou do telemóvel aceso ao lado.'],
+  ['Conforto que não aquece', 'Tecido que não aquece e capa lavável, para dormir sem calor nem marcas.'],
+  ['Rotina simples', 'Uma só coisa, em vez de várias, para desligar a cabeça ao fim do dia.'],
+  ['Acordar com suavidade', 'Sem alarme brusco: o despertar acompanha os seus ciclos de sono.'],
+  ['Ambiente à sua medida', 'Calor ou frio com gel packs, aroma de lavanda e som que escolhe.'],
+  ['Dados que percebe', 'Relatórios simples sobre o seu descanso, na aplicação.']
 ];
 
 const faqs = [
-  ['O Revê trata insónias?', 'Não. É um produto de bem-estar para te ajudar a relaxar e a perceber o teu sono. Não substitui uma avaliação clínica.'],
+  ['O Revê trata insónias?', 'Não. É um produto de bem-estar para o ajudar a relaxar e a perceber o seu sono. Não substitui uma avaliação clínica.'],
   ['O que está incluído na compra?', 'A venda Revê, uma capa lavável, dois gel packs e acesso às funções básicas da aplicação.'],
   ['O que muda com o plano Premium?', 'Acesso à biblioteca completa de meditações e a relatórios de sono detalhados.'],
-  ['Preciso do Spotify?', 'Não é obrigatório, mas a ligação permite tocar as tuas playlists ao colocares a venda.'],
+  ['Preciso do Spotify?', 'Não é obrigatório, mas a ligação permite tocar as suas playlists ao colocar a venda.'],
   ['Posso experimentar antes de comprar?', 'Sim, no showroom em Guimarães, por marcação.']
 ];
 
@@ -31,7 +31,7 @@ export default function Features() {
     <>
       <section className="page-head">
         <p className="eyebrow">Funcionalidades e benefícios</p>
-        <h1>Pensado para o teu descanso.</h1>
+        <h1>Pensado para o seu descanso.</h1>
         <p className="lead narrow">Som, sono e bem-estar reunidos num único dispositivo.</p>
       </section>
 
@@ -64,7 +64,7 @@ export default function Features() {
 
       <section className="section">
         <p className="eyebrow">Benefícios</p>
-        <h2>O que ganhas.</h2>
+        <h2>O que ganha.</h2>
         <div className="grid3">
           {benefits.map(([t, d]) => (
             <article key={t} className="card">
@@ -78,7 +78,7 @@ export default function Features() {
       <section className="section alt split">
         <div>
           <p className="eyebrow">Aplicação</p>
-          <h2>A tua noite, na aplicação.</h2>
+          <h2>A sua noite, na aplicação.</h2>
           <p className="lead">
             Mede o ritmo cardíaco, analisa o sono, oferece meditações guiadas e liga-se ao Spotify. As funções básicas
             estão incluídas; o Premium vai mais longe.
@@ -106,7 +106,7 @@ export default function Features() {
 
       <section className="section">
         <p className="eyebrow">Perguntas frequentes</p>
-        <h2>Antes de decidires.</h2>
+        <h2>Antes de decidir.</h2>
         <div className="faq">
           {faqs.map(([q, a]) => (
             <details key={q}>
@@ -118,7 +118,7 @@ export default function Features() {
       </section>
 
       <section className="section cta">
-        <h2>Pronto para reinventar a tua noite?</h2>
+        <h2>Pronto para reinventar a sua noite?</h2>
         <div className="actions center-actions">
           <Link to="/comprar" className="btn">
             Comprar
